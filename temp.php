@@ -7,7 +7,8 @@
 	 * --check if the bike information exists in database or not--
 	 * --if not, insert the data
 	 */
-	 
+		
+	require_once 'database.php';
 	if(true)
 	{
 		$str = file_get_contents('jsonFile.json');

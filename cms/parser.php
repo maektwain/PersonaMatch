@@ -8,6 +8,8 @@
 	 * --if not, insert the data
 	 */
 	 
+	require_once '../database.php';
+	 
 	if(true)
 	{
 		$str = file_get_contents('jsonFile.json');
@@ -16,13 +18,15 @@
 		try
 		{
 			//--connecting to MongoDB--
-			$mongo = new MongoClient();
+			//$mongo = new MongoClient();
+			$MongoDB = new DBManager();
+			$conn = $MongoDB->getConnection();
 		
-			if($mongo->connected)
+			if($conn->connected)
 			{
 				try
 				{
-					$mongo_db = $mongo->selectDB("easywheels");
+					$mongo_db = $conn->selectDB("IbmCloud_5081d1dj_8br44ob3");
 					
 					try
 					{

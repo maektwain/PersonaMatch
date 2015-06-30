@@ -4,19 +4,21 @@
 	 * --select collection--
 	 * --iterate over all data--
 	 */
-	 
+	
+	require_once 'database.php';	 
 	$theBikeID = isset($_GET['item_id']) ? htmlspecialchars(trim($_GET['item_id']), ENT_QUOTES, 'UTF-8') : '';
 	
 	try
 	{
 		//--connecting to MongoDB--
-		$mongo = new MongoClient();
+		$MongoDB = new DBManager();
+		$conn = $MongoDB->getConnection();
 	
-		if($mongo->connected)
+		if($conn->connected)
 		{
 			try
 			{
-				$mongo_db = $mongo->selectDB("easywheels");
+				$mongo_db = $conn->selectDB("IbmCloud_5081d1dj_8br44ob3");
 				
 				try
 				{

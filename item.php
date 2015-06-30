@@ -1,4 +1,6 @@
 <?php
+	
+	require_once 'database.php';	
 	require_once 'documents_path.inc.php';
 	
 	if(isset($_GET['item_id']) && ($_GET['item_id'] != null))
@@ -17,23 +19,15 @@
 				<meta name="description" content="">
 				<meta name="author" content="">
 
-				<title>Shop Homepage - Start Bootstrap Template</title>
+				<title></title>
 
 				<!-- Bootstrap Core CSS -->
 				<link href="stylesheets/bootstrap.min.css" rel="stylesheet" />
 				<!-- Custom CSS -->
 				<link href="stylesheets/shop-homepage.css" rel="stylesheet" />
-				<!-- Wow Slider -->
-				<link rel="stylesheet" href="http://wowslider.com/styles/mainstyle.css" type="text/css" media="screen" />
-				<link rel="stylesheet" type="text/css" href="http://wowslider.com/sliders/demo-77/engine1/style.css" />
-				<!-- custom stylesheet -->
-				<link rel="stylesheet" href="stylesheets/item_style.css" type="text/css" />
 				
-				<noscript>
-					<div style="display:inline;">
-						<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1071863997/?label=YwhdCOff5AIQvbGN_wM&amp;guid=ON&amp;script=0"/>
-					</div>
-				</noscript>
+				
+				
 			</head>
 			<body>
 				<!-- Navigation -->
@@ -47,7 +41,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="index.php"><b>Easy Wheels</b></a>
+							<a class="navbar-brand" href="index.php"><b>Easy Wheels From Decimus</b></a>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -72,45 +66,8 @@
 						require $path. '/injects/item_bike_view_query.php';
 					?>
 				</div>
-				<nav class="navbar navbar-xss navbar-inverse" role="navigation">
-					<div class="container">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="#">Check Out Similar Models</a>
-						</div>
-					</div>
-				</nav>
 				
-				<!-- code for image slider starts-->
-				<div class="container">
-					<div>
-						<div id="wowslider-container1">
-							<div class="ws_images">
-								<ul>
-									<li>
-										<img src="http://racem.org/wp-content/uploads/parser/Yamaha-350-1.jpg"   id="wows1_0"/>
-									</li>
-									<li>
-										<img src="http://www.safexbikes.com/images/PETROL%20TANK/bajaj-pulsar-200-cc.jpg"  id="wows1_1"/>
-									</li>
-									<li>
-										<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2CesEgCDwD2Y47Rj-dqQJtfTb09AaKP7PJyj4tbSQJwqyotY"  id="wows1_2"/>
-									</li>
-									<li>
-										<img src="http://www.drivespark.com/img/2013/09/17-1379415347-honda-activa-03.jpg"  id="wows1_3"/>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div id="flags" align="right" style="height: 35px;"></div>
-					</div>
-				</div>
+				
 				
 				<!-- comment section -->
 				<div class="well">
@@ -146,12 +103,7 @@
 				<!-- Bootstrap Core JavaScript -->
 				<script src="scripts/bootstrap.min.js" type="text/javascript"></script>
 				<script src="scripts/item_script.js" type="text/javascript"></script>
-				<!-- Wow Slider -->
-				<script type="text/javascript" src="http://wowslider.com/images/demo/jquery.js"></script>
-				<script type="text/javascript" src="http://wowslider.com/styles/a.js"></script>
-				<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js"></script>
-				<script type="text/javascript" src="http://wowslider.com/images/demo/wowslider.js"></script>
-				<script type="text/javascript" src="http://wowslider.com/sliders/demo-77/engine1/script.js"></script>
+				
 			</body>
 		</html>
 <?php

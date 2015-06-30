@@ -17,6 +17,10 @@
 		<?php
 			require $stylesheets_path;
 		?>
+
+		<?php
+			require $db_path;
+		?>
 	</head>
 	<body>
 		<!-- Navigation -->
